@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: "/api"
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/securityDemo"
+    username: root
+    password: 123456a
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+jwt:
+  secret-key: "RwwFwdy2hET3oFqKXe1stDEzB2Q3FSh2K/3uqwdEvXph7pSCwqYVLXGxiif/ETyJ"
+  expiration-time: 3600000
